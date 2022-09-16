@@ -18,6 +18,7 @@ Enter the database connection information in main py
 
 
 # Run the FastAPI main.py .
+cd .\FastAPI\  
 
 uvicorn main:app --reload
 
@@ -26,8 +27,9 @@ uvicorn main:app --reload
 
 
 # Run the application.
-
 note=runserver port 8080
+
+cd .\fastApi_django\      
 
 python manage.py runserver
 
