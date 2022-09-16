@@ -12,6 +12,7 @@ pip install -r requirements.txt
 
 #database connection
 Enter the database connection information in main py 
+
 try:
     conn = psycopg2.connect(
     database='xxxxxx', user='xxxxxx', password='xxxxx', host='xxxxx', port= 'xxxx')
