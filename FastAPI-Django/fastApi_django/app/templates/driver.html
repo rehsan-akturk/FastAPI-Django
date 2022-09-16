@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Driver</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+</head>
+<body>
+
+  <div class="container">
+     
+  <h2>Driver List</h2>
+  <p></p>   
+
+<!-- filter button post all params to views  -->
+  
+  <form method="POST" action="{% url 'button'  %}">
+    {% csrf_token %}
+    <div class="form-group col-lg-4">
+      <label for="startDate">Start Date</label>
+      <input type="text" class="form-control" name="startDate" value="{{request.Get.startDate}}" id="startdate"  />
+    </div>
+    <div class="form-group col-lg-4">
+      <label for="endDate">End Date *</label>
+      <input type="text" class="form-control" name="endDate"  value="{{request.Get.endDate}}" id="endate" />
+    </div>
+  
+  
+  <div class="form-group col-lg-4">
+    <label for="endDate">MinScore</label>
+    <input type="text" class="form-control" id="minscore" name="minscore"  value="{{request.Get.minscore}}"  placeholder="minscore">
+  </div>
+  <div class="form-group col-lg-4">
+    <label for="endDate">MaxScore</label>
+    <input type="text" class="form-control" id="maxscore" name="maxscore"  value="{{request.Get.maxscore}}" placeholder="maxscore">
+  </div>
+  <div class="form-group col-lg-4">
+    <label for="endDate">Filter</label>
+    <button type="submit" class="btn btn-info form-control">Info</button>
+  </div>
+  
+  
+  </form>
+
+  <!--  drivers  responset get random limit 50  and drivers is response from Driverall class -->
+{% for data in drivers %}    
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Email</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Driving Score</th>
+        <th>Age</th>
+        <th>Created Date</th>
+        <th>Update Date</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+      <tr>
+        <td>{{data.id}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.first_name}}</td>
+        <td>{{data.last_name}}</td>
+        <td>{{data.driving_score}}</td>
+        <td>{{data.age}}</td>
+        <td>{{data.created_at}}</td>
+        <td>{{data.updated_at}}</td>
+        
+      </tr>
+    </tbody>
+   
+  </table>
+  {% endfor %}
+</div>
+
+ 
+
+
+
+</body>
+<script type="text/javascript">
+  $(function() {
+          $("#startdate").datepicker({ dateFormat: "yy-mm-dd" }).val()
+          $("#endate").datepicker({ dateFormat: "yy-mm-dd" }).val()
+  });
+
+</script> 
+
+</html>
+
+
+
+
