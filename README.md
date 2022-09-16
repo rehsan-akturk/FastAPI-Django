@@ -27,6 +27,8 @@ except:
 
 #Run the FastAPI main.py .
 uvicorn main:app --reload
+![image](https://user-images.githubusercontent.com/63419567/190594713-fd5d0d07-a625-4a90-bb27-940b2ff3994a.png)
+
 
 
 #Run the application.
