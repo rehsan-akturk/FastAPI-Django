@@ -36,7 +36,7 @@ python manage.py runserver
 # html home page
 after runserver you can see homepage
 
-![image](https://user-images.githubusercontent.com/63419567/190595941-821c8d4a-d41e-4080-ba37-9cd42c33e81b.png)
+![image](https://user-images.githubusercontent.com/63419567/190597326-99e79117-f092-4291-8445-38def704b640.png)
 
 
 
