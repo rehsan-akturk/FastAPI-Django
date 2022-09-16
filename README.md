@@ -13,20 +13,13 @@ pip install -r requirements.txt
 # database connection
 Enter the database connection information in main py 
 
-try:
-    conn = psycopg2.connect(
-    database='xxxxxx', user='xxxxxx', password='xxxxx', host='xxxxx', port= 'xxxx')
-    cursor = conn.cursor()
-    print ("Connected!\n")
-except:
-    print ("UnConnected!\n")
-	
+![image](https://user-images.githubusercontent.com/63419567/190595282-d5109a4d-68e1-4a72-ac1e-a0c0620d7d40.png)
 
 
 
 # Run the FastAPI main.py .
 uvicorn main:app --reload
-![image](https://user-images.githubusercontent.com/63419567/190594713-fd5d0d07-a625-4a90-bb27-940b2ff3994a.png)
+![image](https://user-images.githubusercontent.com/63419567/190595415-804a5137-b16d-4514-a28b-f36e53e33760.png)
 
 
 
@@ -36,11 +29,21 @@ python manage.py runserver
 
 
 
-# html home pages
+# html home page
+after runserver you can see homepage
+![image](https://user-images.githubusercontent.com/63419567/190595941-821c8d4a-d41e-4080-ba37-9cd42c33e81b.png)
 
 
 
-# html filter home pages
+
+
+# html filter home page
+
+select your filter params and submit  button info
+![image](https://user-images.githubusercontent.com/63419567/190595630-b2f4aeef-58d4-41e8-9e74-5c47edc8764a.png)
+![image](https://user-images.githubusercontent.com/63419567/190596521-28bed2c1-3358-45f7-9b91-241f198c2717.png)
+
+
 
 
 
