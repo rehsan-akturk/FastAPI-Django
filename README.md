@@ -46,8 +46,9 @@ after runserver you can see homepage
 select your filter params and submit  button info
 
 ![image](https://user-images.githubusercontent.com/63419567/190597515-e39e7645-ee2e-46fa-bf86-2514ddb94857.png)
+![image](https://user-images.githubusercontent.com/63419567/190601598-5fc7765f-b496-40c5-8ba5-a9f654b3c843.png)
 
-![image](https://user-images.githubusercontent.com/63419567/190596521-28bed2c1-3358-45f7-9b91-241f198c2717.png)
+
 
 
 
