@@ -35,8 +35,7 @@ python manage.py runserver
 
 # html home page
 after runserver you can see homepage
-
-![image](https://user-images.githubusercontent.com/63419567/190597326-99e79117-f092-4291-8445-38def704b640.png)
+![image](https://user-images.githubusercontent.com/63419567/190597603-f552c16a-00ae-413d-91e4-7ff6dbf88553.png)
 
 
 
@@ -46,7 +45,7 @@ after runserver you can see homepage
 
 select your filter params and submit  button info
 
-![image](https://user-images.githubusercontent.com/63419567/190595630-b2f4aeef-58d4-41e8-9e74-5c47edc8764a.png)
+![image](https://user-images.githubusercontent.com/63419567/190597515-e39e7645-ee2e-46fa-bf86-2514ddb94857.png)
 
 ![image](https://user-images.githubusercontent.com/63419567/190596521-28bed2c1-3358-45f7-9b91-241f198c2717.png)
 
