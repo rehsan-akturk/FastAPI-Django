@@ -25,6 +25,7 @@ uvicorn main:app --reload
 
 # Run the application.
 note=runserver port 8080
+
 python manage.py runserver
 
 
