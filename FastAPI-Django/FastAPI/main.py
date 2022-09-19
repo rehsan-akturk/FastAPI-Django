@@ -23,7 +23,7 @@ except:
 
 
 
-#########get data all test limit 10#########
+#########get data all test limit 50#########
 @app.get("/get/")
 async def get():
     try:
@@ -46,7 +46,7 @@ async def get():
         raise HTTPException(400, "failed to do something")
 
 ############get data with  params limit 50 offset 200 """"""""""""""
-#http://127.0.0.1:8000/api?startDate=2022-01-26&endDate=2022-02-26&minScore=1.123123&maxScore=3.124123123&limit=50&offset=200
+
 @app.get("/api")
 async  def get_driver(startDate :str,endDate :str ,minScore :str ,maxScore:str,limit: int=50,offset: int=200):
     
