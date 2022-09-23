@@ -1,5 +1,5 @@
 # FastAPI-Djano
-FastAPI Sqlalchemy
+FastAPI and GUI Django
 
 
 
