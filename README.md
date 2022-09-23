@@ -1,5 +1,5 @@
 # FastAPI-Sqlalchemy
-FastAPI and  db sqlalchemy
+FastAPI Sqlalchemy
 
 
 
