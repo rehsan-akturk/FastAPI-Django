@@ -27,11 +27,8 @@ uvicorn main:app --reload
 
 
 
-# Run the application.
-note=runserver port 8081
+# Requests with Rarameters
 
-
-#requests with parameters
 
 1.Show the number of impressions and clicks that occurred before the 1st of June 2017,
 broken down by channel and country, sorted by clicks in descending order. Hint:
