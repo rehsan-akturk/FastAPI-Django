@@ -27,7 +27,7 @@ uvicorn main:app --reload
 
 
 
-# Requests with Rarameters
+# Requests with Parameters
 
 
 1.Show the number of impressions and clicks that occurred before the 1st of June 2017,
