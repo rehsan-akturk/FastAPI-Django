@@ -24,6 +24,10 @@ uvicorn main:app --reload
 ![image](https://user-images.githubusercontent.com/63419567/191960630-dceff03e-8996-40a9-97a3-ff0f7b007090.png)
 
 
+# Run the Django .
+python manage.py runserver 
+
+
 
 
 
